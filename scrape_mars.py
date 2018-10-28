@@ -103,6 +103,6 @@ def scrape():
     
     mars_listings['hemisphere_image_urls'] = hemisphere_image_urls
 
-return mars_listings
+    return mars_listings
 
 

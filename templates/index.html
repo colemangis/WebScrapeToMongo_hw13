@@ -2,31 +2,34 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hot Finds</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
-  <div class="container">
 
-    <div class="jumbotron text-center">
-      <h1>Mission to Mars</h1>
-      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape Mars News</a></p>
-    </div>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Mars</h1>
+            <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Mars info!</a></p>
 
-    <!-- Craigslist Listings -->
+        </div>
+    <!-- Mars Listings -->
     <div class="row" id="craiglist-listings">
-      <div class="col-md-12">
-        <h4 class="heading">{{listings.price}} {{listings.headline}}</h4>
-        <small>{{listings.hood}}</small>
+        <div class="col-md-12">
+          <h4 class="heading">{{marsData.nasa_title}} {{marsData.nasa_teaser}}</h4>
+        </div>
       </div>
+      <div class ="row">
+        <div class="col-md-8">
+            <h2 class=bold>Mars Image</h2>
+            <img class="img-fluid" src={{ marsData.featured_image_url }} width=100% height=50%/>
+        </div>
     </div>
 
-  </div>
 </body>
 
 </html>
-
